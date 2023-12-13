@@ -1,10 +1,9 @@
 import React from 'react';
-import { BsPeopleFill, BsFillBellFill, BsBuilding } from 'react-icons/bs';
+import { BsPeopleFill, BsFillBellFill, BsBuilding, BsDatabase } from 'react-icons/bs';
 import { ImManWoman } from "react-icons/im";
 import {
     BarChart,
     Bar,
-    Cell,
     XAxis,
     YAxis,
     CartesianGrid,
@@ -81,6 +80,14 @@ function Content() {
                         <BsFillBellFill className='card_icon' />
                     </div>
                     <h1>16</h1>
+                </div>
+                <div className='card'>
+                    <div className='card-inner'>
+                        <h3>DATABASE</h3>
+                        <BsDatabase className='card_icon' />
+                    </div>
+                    <h1>1</h1>
+                    <button onClick={() => window.location.href = '/database'}>Go to Database</button>
                 </div>
             </div>
 
