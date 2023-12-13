@@ -1,6 +1,7 @@
 # Example Screenshot of the Webpage
 
-![image](https://github.com/Voidwalker1999/super-admin-dashboard/assets/98208099/f3ed5ec7-0117-4255-b319-a990c4f6d99b)
+![image](https://github.com/Voidwalker1999/super-admin-dashboard/assets/98208099/a784ad64-8507-4bff-9251-23e5bd124a59)
+
 
 
 
