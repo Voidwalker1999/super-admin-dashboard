@@ -12,6 +12,7 @@ import {
     ResponsiveContainer,
     LineChart,
     Line,
+    Label,
 } from 'recharts';
 
 function Content() {
@@ -45,6 +46,17 @@ function Content() {
             traffic: Math.floor(Math.random() * 101),
         },
     ];
+
+    const getPerformanceStatus = (performance) => {
+        if (performance >= 60) {
+            return 'Best Performance';
+        } else if (performance >= 40) {
+            return 'Neutral';
+        } else {
+            return 'Critical';
+        }
+    };
+
 
     return (
         <main className='main-container'>
@@ -87,7 +99,7 @@ function Content() {
                         <BsDatabase className='card_icon' />
                     </div>
                     <h1>1</h1>
-                    <button onClick={() => window.location.href = '/database'}>Go to Database</button>
+                    <button id="database-button" onClick={() => window.location.href = '/database'}>Go to Database</button>
                 </div>
             </div>
 
@@ -130,7 +142,13 @@ function Content() {
                         <YAxis />
                         <Tooltip />
                         <Legend />
-                        <Line type='monotone' dataKey='traffic' stroke='#8884d8' activeDot={{ r: 8 }} />
+                        <Line type='monotone' dataKey='performance' stroke='#8884d8' activeDot={{ r: 8 }} />
+
+                        <Label
+                            value={({ value }) => getPerformanceStatus(value)}
+                            position='top'
+                            style={{ fill: '#8884d8' }}
+                        />
                     </LineChart>
                 </ResponsiveContainer>
             </div>

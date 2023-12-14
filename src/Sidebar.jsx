@@ -6,7 +6,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
         <aside
             id="sidebar"
             className={openSidebarToggle ? "sidebar-responsive" : ""}
-            style={{ backgroundImage: `url('../public/images/sun-tornado.svg')` }}
+            style={{ backgroundImage: `url('../images/sun-tornado.svg')` }}
         >
             <div className='sidebar-title'>
                 <div className='sidebar-brand'>

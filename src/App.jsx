@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import Content from './Content';
+import Masteradmin from './Masteradmin';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Sidebar />
       <Content />
+      <Masteradmin/>
     </div>
   );
 }

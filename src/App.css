@@ -78,7 +78,9 @@ body {
 #sidebar {
   grid-area: sidebar;
   height: 100%;
-  background-color: #263043;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   overflow-y: auto;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -140,15 +142,11 @@ body {
 .sidebar-responsive {
   display: inline !important;
   position: absolute;
-  /*
-    we want the z-index of the sidebar higher so that
-    the charts are not showing over the sidebar
-    on small screens
-  */
   z-index: 12 !important;
 }
 
 /* End Sidebar  */
+
 
 /* Main  */
 .main-container {
@@ -198,14 +196,22 @@ body {
   background-color: #e8a807;
 }
 
-.button {
-  padding: 10px 20px;
+#database-button {
   background-color: #4CAF50;
-  color: white;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#database-button:hover {
+  background-color: #267e2a;
 }
 
 .card-inner {
@@ -227,6 +233,7 @@ body {
 }
 
 /* End Main  */
+
 
 /* Medium <= 992px */
 
@@ -251,6 +258,7 @@ body {
     display: inline;
   }
 }
+
 /* Small <= 768px */
 
 @media screen and (max-width: 768px) {
@@ -273,3 +281,10 @@ body {
     display: none;
   }
 }
+
+/* Masteradmin  */
+
+
+
+
+/* End Masteradmin */

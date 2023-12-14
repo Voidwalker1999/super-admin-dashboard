@@ -3,7 +3,7 @@ import { BsFillBellFill, BsFillEnvelopeFill, BsPersonCircle, BsSearch, BsJustify
 
 function Navbar({ OpenSidebar }) {
     return (
-        <header className='header' style={{ backgroundImage: `url('../public/images/dragon-scales.svg')` }}>
+        <header className='header' style={{ backgroundImage: `url('../images/dragon-scales.svg')` }}>
             <div className='menu-icon'>
                 <BsJustify className='icon' onClick={OpenSidebar} />
             </div>
