@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 function Masteradmin() {
+    const [masterAdmins, setMasterAdmins] = useState([]);
     const [newMasterAdmin, setNewMasterAdmin] = useState({ fullName: '', email: '', mobileNumber: '', country: '', schoolName: '', designation: '', masterAdminId: '', schoolId: '' });
     const [showInputs, setShowInputs] = useState(false);
 
@@ -16,12 +17,17 @@ function Masteradmin() {
             schoolId
         }));
 
+        // Add newMasterAdmin to masterAdmins array
+        setMasterAdmins(prevState => [...prevState, newMasterAdmin]);
+
         console.log('New Master Admin:', newMasterAdmin);
         setShowInputs(true);
     }
 
-    const removeMasterAdmin = () => {
+    const removeMasterAdmin = (masterAdminId) => {
         // Remove Master Administrator logic here
+        const updatedMasterAdmins = masterAdmins.filter(admin => admin.masterAdminId !== masterAdminId);
+        setMasterAdmins(updatedMasterAdmins);
     }
 
     const changeSettings = () => {
@@ -38,18 +44,20 @@ function Masteradmin() {
 
     const generateMasterAdminId = () => {
         // Generate Master Admin Id logic here
-        // Return the generated Id
+        const randomId = Math.floor(Math.random() * 1000);
+        return `MA${randomId}`;
     }
 
     const generateSchoolId = () => {
         // Generate School Id logic here
-        // Return the generated Id
+        const randomId = Math.floor(Math.random() * 1000);
+        return `SCH${randomId}`;
     }
 
     return (
         <div>
             <button onClick={addMasterAdmin}>Add new Master Administrator</button>
-            <button onClick={removeMasterAdmin}>Remove Master Administrator</button>
+            <button onClick={() => removeMasterAdmin(newMasterAdmin.masterAdminId)}>Remove Master Administrator</button>
             <button onClick={changeSettings}>Change Settings and Preferences of Master Administrator</button>
             {showInputs && (
                 <>
@@ -67,6 +75,17 @@ function Masteradmin() {
                     <button onClick={addMasterAdmin}>Create</button>
                 </>
             )}
+            {masterAdmins.map(admin => (
+                <div key={admin.masterAdminId}>
+                    <p>Name: {admin.fullName}</p>
+                    <p>Email: {admin.email}</p>
+                    <p>Mobile Number: {admin.mobileNumber}</p>
+                    <p>Country: {admin.country}</p>
+                    <p>School Name: {admin.schoolName}</p>
+                    <p>Designation: {admin.designation}</p>
+                    <button onClick={() => removeMasterAdmin(admin.masterAdminId)}>Remove</button>
+                </div>
+            ))}
         </div>
     )
 }

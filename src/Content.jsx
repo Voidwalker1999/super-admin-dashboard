@@ -98,7 +98,7 @@ function Content() {
                         <h3>DATABASE</h3>
                         <BsDatabase className='card_icon' />
                     </div>
-                    <h1>1</h1>
+                    <h1>5</h1>
                     <button id="database-button" onClick={() => window.location.href = '/database'}>Go to Database</button>
                 </div>
             </div>
