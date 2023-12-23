@@ -20,37 +20,37 @@ function Content() {
         {
             name: 'Day 1',
             traffic: Math.floor(Math.random() * 101),
-            // performance: Math.floor(Math.random() * 101),
+            performance: Math.floor(Math.random() * 101),
         },
         {
             name: 'Day 2',
             traffic: Math.floor(Math.random() * 101),
-            // performance: Math.floor(Math.random() * 101),
+            performance: Math.floor(Math.random() * 101),
         },
         {
             name: 'Day 3',
             traffic: Math.floor(Math.random() * 101),
-            // performance: Math.floor(Math.random() * 101),
+            performance: Math.floor(Math.random() * 101),
         },
         {
             name: 'Day 4',
             traffic: Math.floor(Math.random() * 101),
-            // performance: Math.floor(Math.random() * 101),
+            performance: Math.floor(Math.random() * 101),
         },
         {
             name: 'Day 5',
             traffic: Math.floor(Math.random() * 101),
-            // performance: Math.floor(Math.random() * 101),
+            performance: Math.floor(Math.random() * 101),
         },
         {
             name: 'Day 6',
             traffic: Math.floor(Math.random() * 101),
-            // performance: Math.floor(Math.random() * 101),
+            performance: Math.floor(Math.random() * 101),
         },
         {
             name: 'Day 7',
             traffic: Math.floor(Math.random() * 101),
-            // performance: Math.floor(Math.random() * 101),
+            performance: Math.floor(Math.random() * 101),
         },
     ];
 

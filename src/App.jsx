@@ -7,6 +7,7 @@ import Masteradmin from './Masteradmin';
 import UIComponentes from './UIComponentes';
 import Widgets from './Widgets';
 import Ecommerce from './Ecommerce';
+import Report from './Reports';
 import System from './System';
 
 function App() {
@@ -14,12 +15,13 @@ function App() {
     <div className='grid-container'>
       <Navbar />
       <Sidebar />
-      {/* <Content /> */}
+      <Content />
       {/* <Masteradmin/> */}
       {/* <UIComponentes/> */}
       {/* <Widgets/> */}
       {/* <Ecommerce/> */}
-      <System/>
+      {/* <Report/> */}
+      {/* <System/> */}
     </div>
   );
 }
