@@ -284,7 +284,340 @@ body {
 
 /* Masteradmin  */
 
+.admin-container {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 250px 10px 250px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  text-align: center;
+}
 
+.master-admin {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
+  text-align: left;
+}
 
+.remove-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+#create-btn,
+#clear-all-btn {
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #d98f18;
+ }
 
 /* End Masteradmin */
+
+
+/* UIComponents */
+
+#section1 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 290%;
+  margin: 20px 20px 20px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#platformLogoTitle {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#section1 img {
+  width: 100%;
+  height: auto;
+}
+
+#editButton,
+#previewButton,
+#uploadLogoButton,
+#uploadLogoCloudButton,
+#createButton,
+#editButton,
+#viewButton,
+#deleteButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#platformNameTitle {
+  color: #333;
+  margin-top: 20px;
+}
+
+#platformNameInput {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#section2 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 290%;
+  margin: 20px 20px 20px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#platformColorTitle {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#platformColorsTitle {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#section2Preview {
+  margin-top: 20px;
+}
+
+#section2Preview h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#section2Preview div {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section2Preview p {
+  color: #fff;
+}
+
+#saveColorsButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#section3 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 290%;
+  margin: 20px 20px 20px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#changeIconsTitle {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#componentTypeTitle {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#componentTypeSelect {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#iconDesignTitle {
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#iconDesignSelect {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#pagesTitle {
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#pagesSelect {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* End UIComponents */
+
+/* Ecommerce */
+
+#deliveryLabel,
+#pickupLabel {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #000000;
+}
+
+#deliverySection {
+  background-color: #909090;
+  padding: 20px;
+  width: 100%;
+  margin: 20px 20px 20px 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+#pickupSection {
+  background-color: #909090;
+  padding: 20px;
+  width: 100%;
+  margin: 20px 20px 20px 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 60px;
+ height: 34px;
+}
+
+.switch input { 
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c74646;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 26px;
+ width: 26px;
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ border-radius: 10px;
+ -webkit-transition: 1s;
+ transition: 1s;
+}
+
+input:checked + .slider {
+ background-color: rgba(37, 195, 63, 0.765)
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(26px);
+ -ms-transform: translateX(26px);
+ transform: translateX(26px);
+}
+
+.slider.round {
+ border-radius: 34px;
+}
+
+.slider.round:before {
+ border-radius: 50%;
+}
+
+.switch.on .slider:before {
+ background-color: white;
+}
+
+#pickupSection, #deliverySection {
+ margin-bottom: 20px;
+}
+
+#pickupToggleContainer, #deliveryToggleContainer {
+ margin-left: 10px;
+}
+
+/* Hover effect */
+#deliverySection:hover,
+#pickupSection:hover {
+  background-color: #b8b8b8;
+}
+
+/* End Ecommerce */
